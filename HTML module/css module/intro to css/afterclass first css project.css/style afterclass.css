@@ -1,0 +1,25 @@
+/*universal css*/
+*{
+    font size: 50px;
+    background-color:yellow;
+}
+/*internal css*/
+h2{
+    color:brown;background-color:beige ;
+}
+h3{
+    color:dimgray
+}
+h2{
+    color:fuchsia
+}
+/*id css*/
+#myid {
+    color:red
+}
+.myclass{
+    color:green
+}
+h1{
+    color:aqua
+}

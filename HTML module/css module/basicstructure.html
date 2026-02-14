@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+body{
+    background-color: azure;
+    color: burlywood;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+ color: brown;
+   
+}
+h1{
+    color: cadetblue;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: wavy;
+    color: aqua;
+}
+/*child selector */
+ul>li{
+    color: cornflowerblue;
+    font-weight:bold;
+}
+/*sibling selector*/
+ul+p{
+    color: blue;
+    background-color: purple;
+    padding: 15px;
+}
+ul li:hover{
+    color: pink;
+}
+a:hover{
+    color:yellow;
+}
+ul li:nth-child(4){
+    background-color: chartreuse;
+}
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+ul li::before{
+    content: "😳";
+}
+a::after{
+    content: 🤩;
+;
+}
+p::first-letter{
+    color: darkgoldenrod;
+    font-size: 100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Welcome to the Space Explorer's Club</h1>
+
+<ul>
+
+<li>Moon Missions</li>
+
+<li>Mars Rovers</li>
+
+<li>International Space Station</li>
+
+<li>Telescopes and Stars</li>
+
+<li>Black Holes Mysteries</li>
+
+</ul>
+
+<p>Space exploration has always captivated human imagination. It's a journey to the unknown!</p>
+
+<p>From the Moon to distant galaxies, we continue to explore the vastness of space.</p>
+
+<a href="#">Join our Mission</a>
+
+<a href="#">Latest Space News</a>
+
+<a href="#">Gallery of the Universe</a>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            scope
+        </title>
+    </head>
+    <body>
+        <p>
+            this is the final price.
+        </p>
+<button onclick="myfunction()">click here</button>
+<div id="demo"></div>
+    <div id="demo2"></div>
+    <script>
+    var x="20";
+    function myfunction(){
+        var y=2;
+    document.getElementById("demo").innerHTML=x*y;
+     document.getElementById("demo2").innerHTML=y;
+}
+ document.getElementById("demo").innerHTML=x;
+  document.getElementById("demo2").innerHTML=y;
+    </script>
+    </body>
+</html>

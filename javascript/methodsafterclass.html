@@ -6,8 +6,9 @@
         </title>
     </head>
     <body>
+        <div id="div"></div>
         <script>
-            var str="I am so intelligent and it is so good.";
+            var str="Im intelligent and cats are so cute you know";
             document.write(str.toUpperCase());
             document.write("<br>");
              document.write(str.toLowerCase());
@@ -18,7 +19,14 @@
              var sec=new RegExp("I");
              var red=sec.test(str);
              document.write(red)
-
+             </script>
+             <script>
+            var sports=["football","cricket","basketball","badminon"];
+var text="";
+var i;
+for(i=0;i<sports.length;i++){
+text+= sports[i]+"<br>";}
+document.getElementById("div").innerHTML=text;
         </script>
     </body>
 </html>

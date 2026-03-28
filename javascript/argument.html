@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            argument
+        </title>
+        <div id="result"></div>
+        <h2>lets see what is the highest marks in test</h2>
+<script>
+    function findMax(){
+    var i;
+    var max=0;
+    for(i=0;i<arguments.length;i++){
+    if(arguments[i]>max){
+    max=arguments[i];
+    }
+}
+    return max;
+}
+    document.getElementById("result").innerHTML= findMax(8,9,4);
+    
+</script>
+    </head>
+</html>

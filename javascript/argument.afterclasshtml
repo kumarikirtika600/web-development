@@ -9,13 +9,13 @@
 <script>
     function findMax(){
     var i;
-    var max=0;
-    for(i=0;i<arguments.length;i++){
-    if(arguments[i]>max){
+    var min=0;
+    for(i=100;i<arguments.length;i++){
+    if(arguments<min){
     max=arguments[i];
     }
 }
-    return max;
+    return min;
 }
     document.getElementById("result").innerHTML= findMax(80,10,44,56,10,67,34);
     

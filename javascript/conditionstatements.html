@@ -14,25 +14,25 @@
     </head>
    
     <body>
-         <button onclick="myfunction()">click it </button>
-        <p id="div"></p>
-        <p id="hour"></p>
-        <p id="greeting"></p>
+         <button id ="div" onclick="myfunction()">click it </button>
+        <div id="div"></p>
+        <div id="hour"></p>
+        <div id="greet"></p>
         <script>
             function myfunction(){
                 var greeting;
-                var time= new date().getHours();
+                var time= new Date().getHours();
                 if (time>=6){
                 greeting="good morning";
                 }
-                else if (time>=19){
+                else if (time>=21){
                 greeting="good night";
                 }
                 else {
                 greeting="good evening";
                 }
-                document.getElementById("hour").innerHTML="current hour is"+ hour;
-                document.getElementById("greeting").innerHTML=greeting;
+                document.getElementById("hour").innerHTML="current hour is"+ time;
+                document.getElementById("greet").innerHTML=greeting;
                 
             }
 

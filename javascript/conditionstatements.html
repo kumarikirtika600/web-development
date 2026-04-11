@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            conditions 
+        </title>
+        <style>
+       #div{
+           background-color:red;
+            position:sticky;
+            font-family:'Times New Roman', Times, serif;
+        }
+        </style>
+    </head>
+   
+    <body>
+         <button onclick="myfunction()">click it </button>
+        <p id="div"></p>
+        <p id="hour"></p>
+        <p id="greeting"></p>
+        <script>
+            function myfunction(){
+                var greeting;
+                var time= new date().getHours();
+                if (time>=6){
+                greeting="good morning";
+                }
+                else if (time>=19){
+                greeting="good night";
+                }
+                else {
+                greeting="good evening";
+                }
+                document.getElementById("hour").innerHTML="current hour is"+ hour;
+                document.getElementById("greeting").innerHTML=greeting;
+                
+            }
+
+        </script>
+    </body>
+
+</html>
